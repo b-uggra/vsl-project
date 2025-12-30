@@ -1,0 +1,27 @@
+// Factorial VSL Program
+// Prints factorials from 0 to 10
+
+FUNC main()
+{
+    VAR i
+    i := 0
+
+    WHILE( 11 - i )
+    DO
+    {
+        PRINT "f( ", i, " ) = ", f( i ), "\n"
+        i := i + 1
+    }
+    DONE
+}
+
+FUNC f( n )
+{
+    // Factorial defined recursively
+    IF n
+    THEN
+        RETURN n * f( n - 1 )
+    ELSE
+        RETURN 1
+    FI
+}
