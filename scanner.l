@@ -53,7 +53,7 @@ void  mktext( void ) ;
 %}
 
 comment         "//".*
-delimiter       [ \t\n]
+delimiter       [ \t\r\n]
 whitespace      {delimiter}+
 uc_letter       [A-Z]
 lc_letter       [a-z]
